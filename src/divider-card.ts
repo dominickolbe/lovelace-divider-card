@@ -1,12 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { LitElement, html, TemplateResult, css, PropertyValues, CSSResultGroup } from "lit";
 import { customElement, property, state } from "lit/decorators";
-import { HomeAssistant, hasConfigOrEntityChanged, LovelaceCardEditor } from "custom-card-helpers"; // This is a community maintained npm module with common helper functions/types. https://github.com/custom-cards/custom-card-helpers
+import { HomeAssistant, hasConfigOrEntityChanged, LovelaceCardEditor } from "custom-card-helpers";
 import { styleMap } from "lit/directives/style-map.js";
 
 import type { DividerCardConfig } from "./types";
 
-// This puts your card into the UI card picker dialog
 (window as any).customCards = (window as any).customCards || [];
 (window as any).customCards.push({
   type: "divider-card",

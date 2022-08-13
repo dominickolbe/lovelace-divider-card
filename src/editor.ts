@@ -94,7 +94,6 @@ export class DividerCardEditor extends ScopedRegistryHost(LitElement) implements
           .configValue=${"divider_height"}
           @input=${this._valueChanged}
           min="0"
-          max="1000"
           helper="1px"
           suffix="px"
         ></mwc-textfield>
