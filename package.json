@@ -1,0 +1,72 @@
+{
+  "name": "lovelace-divider-card",
+  "version": "0.0.0",
+  "description": "Lovelace Divider Card",
+  "keywords": [
+    "home-assistant",
+    "homeassistant",
+    "hass",
+    "automation",
+    "lovelace",
+    "custom-cards"
+  ],
+  "module": "divider-card.js",
+  "repository": "git@github.com:dominickolbe/lovelace-divider-card.git",
+  "author": {
+    "name": "Dominic Kolbe",
+    "email": "kolbedominic@gmail.com",
+    "url": "https://dominickolbe.dk"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "rollup -c rollup.config.dev.js --watch",
+    "build": "yarn test && yarn rollup",
+    "rollup": "rollup -c",
+    "lint": "eslint src/*.ts",
+    "prettier:check": "prettier --check src/*",
+    "prettier:fix": "prettier --write src/*",
+    "test": "yarn prettier:check && yarn lint"
+  },
+  "dependencies": {
+    "@lit-labs/scoped-registry-mixin": "1.0.1",
+    "@material/mwc-formfield": "0.27.0",
+    "@material/mwc-list": "0.27.0",
+    "@material/mwc-menu": "0.27.0",
+    "@material/mwc-notched-outline": "0.27.0",
+    "@material/mwc-ripple": "0.27.0",
+    "@material/mwc-select": "0.27.0",
+    "@material/mwc-switch": "0.27.0",
+    "@material/mwc-textfield": "0.27.0",
+    "custom-card-helpers": "1.9.0",
+    "home-assistant-js-websocket": "7.1.0",
+    "lit": "2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.18.10",
+    "@babel/plugin-proposal-class-properties": "7.18.6",
+    "@babel/plugin-proposal-decorators": "7.18.10",
+    "@rollup/plugin-json": "4.1.0",
+    "@typescript-eslint/eslint-plugin": "5.33.0",
+    "@typescript-eslint/parser": "5.33.0",
+    "eslint": "8.21.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "prettier": "2.7.1",
+    "rollup": "2.77.3",
+    "rollup-plugin-babel": "4.4.0",
+    "rollup-plugin-commonjs": "10.1.0",
+    "rollup-plugin-node-resolve": "5.2.0",
+    "rollup-plugin-serve": "2.0.1",
+    "rollup-plugin-terser": "7.0.2",
+    "rollup-plugin-typescript2": "0.32.1",
+    "typescript": "4.7.4"
+  },
+  "resolutions": {
+    "lit": "2.1.2",
+    "lit-html": "2.1.2",
+    "lit-element": "3.1.2",
+    "@lit/reactive-element": "1.2.1"
+  }
+}
