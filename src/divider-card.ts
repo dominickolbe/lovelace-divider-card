@@ -86,7 +86,7 @@ export class BoilerplateCard extends LitElement {
       .divider {
         height: var(--divider-card-height, 1px);
         background-color: var(--primary-text-color);
-        opacity: var(--divider-card-opacity, 0.15);
+        opacity: var(--divider-card-opacity, 0.10);
         width: 100%;
       }
     `;
