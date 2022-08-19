@@ -84,7 +84,7 @@ export class DividerCardEditor extends ScopedRegistryHost(LitElement) implements
           @input=${this._valueChanged}
           min="0"
           max="100"
-          helper="15%"
+          helper="10%"
           suffix="%"
         ></mwc-textfield>
         <mwc-textfield
