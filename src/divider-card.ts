@@ -82,6 +82,7 @@ export class BoilerplateCard extends LitElement {
       :host {
         --ha-card-background: none;
         --ha-card-box-shadow: none;
+        --ha-card-border-width: 0;
       }
       .divider {
         height: var(--divider-card-height, 1px);
